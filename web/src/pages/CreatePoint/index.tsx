@@ -11,7 +11,7 @@ import {LeafletMouseEvent} from 'leaflet'
 interface Item {
     id: number;
     title: string;
-    image: string;
+    image_url: string;
 }
 
 interface IBGEUFResponde {
@@ -206,7 +206,7 @@ const CreatPoint = () => {
                             <li key={item.id}
                                 onClick={() => handleSeletItem(item.id)}
                                 className={selectedItems.includes(item.id) ? 'selected' : ''}>
-                                <img src={item.image} alt={item.title}/>
+                                <img src={item.image_url} alt={item.title}/>
                                 <span>{item.title}</span>
                             </li>
                         )}
