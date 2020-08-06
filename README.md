@@ -1,11 +1,11 @@
-# NLW#1 Booster
+<p align="center">
+   <img src="https://github.com/WesleyxBZ/ecoleta/blob/master/.github/logo.png" alt="Ecoleta" width="280"/>
+</p>
 
-Projeto desenvolvido durante a Next Level Week #1 Booster
-
-## Sobre
+# :page_facing_up: Sobre
 Ecoleta é um sistema para descobrir pontos de coleta de resíduos mais perto de nós
 
-## Tecnologias :computer:
+# :computer: Tecnologias
 * TypeScript
 * React Native & React JS
 * Express
@@ -14,36 +14,59 @@ Ecoleta é um sistema para descobrir pontos de coleta de resíduos mais perto de
 * Axios (API's)
 * Celebrate (Validação no back-end)
 
-## :wrench: Back-end
-Para executar o back-end, entre no diretório `server`.
+# :construction_worker: Como executar
+```bash
+# Clone o repositório
+$ git clone https://github.com/WesleyxBZ/ecoleta.git
 ```
-# Instalação das dependências
+### Executar a API
+
+```bash
+# Va para a pasta server
+$ cd ecoleta/server
+
+# Instale as dependências
 $ npm install
 
-# Criar as tabelas do banco de dados
+# Rode as migrations
 $ npm run knex:migrate
 
-# Seed de itens de coleta
+# Rode os seed de itens de coleta
 $ npm run knex:seed
 
-# Rodar o back-end
+# Execute a aplicacao
 $ npm run dev
 ```
+Acesse http://localhost:3333/
 
-## :computer: Front-end
-Para executar o front-end, entre no diretório `web`.
-```
-# Instalação das dependências
+### Executar o Projeto Web
+
+```bash
+# Va para a pasta web
+$ cd ecoleta/web
+
+# Instale as dependências
 $ npm install
 
-# Rodar o front-end
+# Execute a aplicação
 $ npm start
 ```
+Acesse http://localhost:3000/
 
-## :iphone: Mobile
-Para executar o front-end, entre no diretório `mobile`.
-A execução do mobile é um pouco diferente porque precisamos que o Expo tenha instalado na nossa máquina, e em 
-seguida no celular, caso queira rodar pelo celular físico. No celular físico é bem fácil, você precisa instalar o 
-aplicativo Expo que está disponível da App Store ou na Play Store.
-Para a utilização de um emulador com o Expo, você pode seguir o link guia para configuração </br>
-[RocketSeat - Emulando React Native com Expo](https://www.youtube.com/watch?v=eSjFDWYkdxM&vl=en)
+### Executar o Projeto Mobile
+
+Para executar o projeto mobile você vai precisar de um celular com [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) instalado ou um emulador android/ios.
+<br />
+Após, fork esse projeto e clone em sua máquina. Dentro da pasta do projeto, execute e siga os comandos:
+
+```bash
+# Va para a pasta mobile
+$ cd ecoleta/mobile
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação
+$ npm start
+```
+Após, leia o QRCode com o app [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) ou execute o emulador.
