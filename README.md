@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://github.com/WesleyxBZ/ecoleta/blob/master/.github/logo.png" alt="Ecoleta" width="280"/>
+   <img src="https://github.com/WesleyxBZ/ecoleta/blob/master/.github/logo.svg" alt="Ecoleta" width="280"/>
 </p>
 
 # :page_facing_up: Sobre
